@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIKEMOTORS | ADLIA PERFORMANCE FLAGSHIP</title>
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;800&family=Noto+Sans+Georgian:wght@100;400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="container-full nav">
+            <div class="logo">MIKE<span>MOTORS</span></div>
+            <div class="nav-right">
+                <div class="lang-switch">
+                    <button onclick="setLanguage('ge')" class="l-btn active" id="btn-ge">GE</button>
+                    <button onclick="setLanguage('en')" class="l-btn" id="btn-en">EN</button>
+                </div>
+                <button class="btn-contact" data-key="nav-contact"><p>კონტაქტი</p></button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-huge">
+            <div class="container-full">
+                <h5 class="kicker" data-key="hero-kicker">BATUMI • PERFORMANCE ATELIER</h5>
+                <h1 id="hero-title">POWER & <br><span class="outline">PRECISION.</span></h1>
+                
+                <div class="hero-footer">
+                    <div class="search-wrap">
+                        <label data-key="label-reg">ავტომობილის ძებნა</label>
+                        <input type="text" id="regInput" placeholder="AA-001-AA">
+                        <button onclick="startJourney()" data-key="btn-verify">შემოწმება</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section-services">
+            <div class="container-full">
+                <div class="service-row">
+                    <div class="svc-card">
+                        <span class="svc-tag">DIAGNOSIS</span>
+                        <h2 data-key="svc-diag-title">სრული დიაგნოსტიკა</h2>
+                        <p data-key="svc-diag-p">კომპიუტერული ანალიზი და სისტემური შემოწმება უახლესი აპარატურით.</p>
+                        <span class="svc-price">₾150</span>
+                    </div>
+                    
+                    <div class="svc-card featured">
+                        <span class="svc-tag">PERFORMANCE</span>
+                        <h2 data-key="svc-s1-title">STAGE 1</h2>
+                        <p data-key="svc-s1-p">პროგრამული ოპტიმიზაცია სიმძლავრისა და ეკონომიურობის ბალანსისთვის.</p>
+                        <span class="svc-price">₾800+</span>
+                    </div>
+
+                    <div class="svc-card">
+                        <span class="svc-tag">EXTREME</span>
+                        <h2 data-key="svc-s2-title">STAGE 2</h2>
+                        <p data-key="svc-s2-p">აპარატურული და პროგრამული მოდიფიკაცია მაქსიმალური სიმძლავრისთვის.</p>
+                        <span class="svc-price">₾1500+</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-grand">
+        <div class="container-full">
+            <div class="footer-grid">
+                <div class="f-brand">
+                    <div class="logo">MIKE<span>MOTORS</span></div>
+                    <p>ბათუმი, ადლიის მე-4 ჩიხი N6<br>Adlia 4th Deadlock N6, Batumi</p>
+                </div>
+                
+                <div class="f-socials">
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="https://wa.me/9955XXYYYYYY" target="_blank" class="social-link" aria-label="WhatsApp">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-14h.1c4.3 0 7.9 3.5 8.4 7.7z"></path><path d="M11 11l4 4"></path><path d="M15 11l-4 4"></path></svg>
+                    </a>
+                    <a href="https://www.google.com/maps/search/41.5975,41.6065" target="_blank" class="social-link" aria-label="Location">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="f-bottom">
+                <p>&copy; 2026 MIKEMOTORS. EXCELLENCE AS STANDARD.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
